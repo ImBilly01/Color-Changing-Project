@@ -1,4 +1,7 @@
+// Get button id
 const btn = document.getElementById('btn');
+
+// Colors
 const color = [
     "AliceBlue",
     "AntiqueWhite",
@@ -154,10 +157,11 @@ btn.addEventListener('click', () => {
     // Get a random number
     const randomNumber = getRandomNumber();
 
+    // Change background color
     document.body.style.backgroundColor = color[randomNumber];
-    color.textContent = color[randomNumber];
 });
 
 function getRandomNumber() {
+    // Random color
     return Math.floor(Math.random() * color.length);
 }
