@@ -159,8 +159,14 @@ btn.addEventListener('click', () => {
 
     // Change background color
     document.body.style.backgroundColor = color[randomNumber];
+
+    // Color name on the console
+    // console.log(color[length++]); TESTING PURPOSES
+    console.log(color[randomNumber]);
+
 });
 
+// Get random color
 function getRandomNumber() {
     // Random color
     return Math.floor(Math.random() * color.length);
